@@ -1,0 +1,93 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./index.css" />
+<script src="./aa.js" ></script>
+
+<div class="container">
+    <div class="text" data-splitting="">Happy Birthday</div>
+    <div class="presents">
+      <div class="present orange">
+        <div class="lid"></div>
+        <div class="box"></div>
+        <div class="bow"></div>
+        <div class="ribbon"></div>
+      </div>
+      <div class="present blue">
+        <div class="lid"></div>
+        <div class="box"></div>
+        <div class="bow"></div>
+        <div class="ribbon"></div>
+      </div>
+      
+      <div class="present green">
+        <div class="lid"></div>
+        <div class="box"></div>
+        <div class="bow"></div>
+        <div class="ribbon"></div>
+      
+      </div>
+      
+    </div>
+
+    <p class="birthday">Your birthday is the beginning of your own personal new year. Your first birthday was a beginning, and each new birthday is a chance to begin again, to start over, to take a new grip on life.</p>
+  </div>
+  <div class="last">
+      <h2>SORRY</h2>
+      <h6 class="aas">FOR ALL THE TIME I HURT YOU</h6>
+      <h2>BYE</h2>
+      <h2>&</h2>
+      <h2>KEEP SMILING</h2>
+       <button>A MESSAGE FOR YOU</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/mojs/0.288.1/mo.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/mojs-player/0.43.15/mojs-player.min.js"></script>
+  <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+  <script>document.addEventListener("click", (event) => {
+      bursty(event.pageX, event.pageY);
+    });
+    
+    setInterval(() => randomizedConfetti(), 500);
+    
+    function bursty(x, y) {
+      const burst = new mojs.Burst({
+        left: 0,
+        top: 0,
+        radius: { 0: 200 },
+        count: 20,
+        degree: 360,
+        children: {
+          fill: { white: "#34E1FF" },
+          duration: 2000
+        }
+      }).tune({
+        x: x,
+        y: y
+      });
+    
+      burst.replay();
+    }
+    
+    function randomizedConfetti() {
+      let randomX = Math.floor(Math.random() * (document.body.clientWidth-300) + 0);
+      let randomY = Math.floor(Math.random() * (window.innerHeight-200) + 0);
+      const burst = new mojs.Burst({
+        left: 0,
+        top: 0,
+        radius: { 0: 200 },
+        count: 20,
+        degree: 360,
+        children: {
+          fill: { white: "#34E1FF" },
+          duration: 2000
+        }
+      }).tune({
+        x: randomX,
+        y: randomY
+      });
+    
+      burst.replay();
+    }
+    
+    Splitting();
+    </script>
+  
