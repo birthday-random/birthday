@@ -5,9 +5,7 @@
 <div id="player">
 
     <audio controls autoplay>
-      <source src="./aaa.mp3" type="audio/mp3">
-      <source src="./audio.mpeg" type="audio/mpeg">
-      Your browser does not support the audio element.
+      <source src="./audio.mpeg" type="audio/mp3">
     </audio>
 
 </div>
@@ -46,17 +44,17 @@
   <div class="last none">
       <h2>SORRY</h2>
       <h6 class="aas">FOR ALL THE TIME I HURT YOU</h6>
+      <h6 class="aas">PLEASE FORGIVE ME FOR MY MISTAKES</h6>
+      <h6 class="aas">...</h6>
       <h2>BYE</h2>
       <h2>&</h2>
       <h2>KEEP SMILING</h2>
-       <button>A MESSAGE FOR YOU</button>
   </div>
 
   <script src="https://cdn.jsdelivr.net/mojs/0.288.1/mo.min.js"></script>
   <script src="https://cdn.jsdelivr.net/mojs-player/0.43.15/mojs-player.min.js"></script>
   <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
   <script>
-  audioElement.play();
 
   document.addEventListener("click", (event) => {
       bursty(event.pageX, event.pageY);
@@ -104,6 +102,6 @@
       burst.replay();
     }
     
-    Splitting();
+
     </script>
   

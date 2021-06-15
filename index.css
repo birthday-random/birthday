@@ -14,10 +14,17 @@ body {
   width: 100%;
 }
 
-.none{
-  display:none;
-}
 
+
+#player{
+  position: fixed;
+   
+  left: 50%;
+  bottom: 6%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+
+}
 
 .container {
     position: relative;
@@ -367,7 +374,10 @@ h2{
 
 .aas{
     font-size: 20px;
-    color:#f6f6f6
+    color:#f6f6f6;
+    font-style: italic;
+    padding: 10px 0;
+    
 }
 
 
