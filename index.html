@@ -2,7 +2,20 @@
 <link rel="stylesheet" href="./index.css" />
 <script src="./aa.js" ></script>
 
-<div class="container">
+<div id="player">
+
+    <audio controls autoplay>
+      <source src="./aaa.mp3" type="audio/mp3">
+      <source src="./audio.mpeg" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+</div>
+
+
+<div class="container none">
+
+
     <div class="text" data-splitting="">Happy Birthday</div>
     <div class="presents">
       <div class="present orange">
@@ -30,7 +43,7 @@
 
     <p class="birthday">Your birthday is the beginning of your own personal new year. Your first birthday was a beginning, and each new birthday is a chance to begin again, to start over, to take a new grip on life.</p>
   </div>
-  <div class="last">
+  <div class="last none">
       <h2>SORRY</h2>
       <h6 class="aas">FOR ALL THE TIME I HURT YOU</h6>
       <h2>BYE</h2>
@@ -42,7 +55,10 @@
   <script src="https://cdn.jsdelivr.net/mojs/0.288.1/mo.min.js"></script>
   <script src="https://cdn.jsdelivr.net/mojs-player/0.43.15/mojs-player.min.js"></script>
   <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
-  <script>document.addEventListener("click", (event) => {
+  <script>
+  audioElement.play();
+
+  document.addEventListener("click", (event) => {
       bursty(event.pageX, event.pageY);
     });
     
