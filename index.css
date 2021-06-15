@@ -7,16 +7,13 @@
 }
 
 body {
-  background: #34E1FF;
+  background: #000 !important;
   font-family: "Fredoka One", cursive;
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
   width: 100%;
 }
 
-body{
-  background-color: black;
-}
 
 #player{
   position: fixed;
